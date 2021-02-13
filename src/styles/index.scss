@@ -1,13 +1,48 @@
 @import "~bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 
-/* 
-
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
+body{
+    color: white;
+    font-family: 'Rock Salt', cursive;    
+    font-size: 25px;
+    background: black
+}
+h1 {
+    font-size: 50px;
+    padding-bottom: 50px;
+}
+li{
+    border-bottom: 1px solid white;
+    text-align: center;
+}
+button{
+    color: black;
+    background: white;
+    width: 100px;
+    border: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 5px black;
+    border-radius: 20px;
+}
+.botones {
+    padding: 30px;
+    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 590px;
+    top: 650px
+}
+.reproduciendo {
+    background-color: red;
+    border: 5px white solid;
+    border-radius: 15px;
+}
+.contenedor {
+    margin: auto;
+    width: 50%;
+    border: 3px solid black;
+    padding: 20px;
+    background-color: black;
+}
