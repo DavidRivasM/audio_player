@@ -38,6 +38,10 @@ export function Home() {
 		audioPlayer.current.pause();
 	};
 
+	const seleccionar = idUnico => {
+		setCancionActual(idUnico);
+	};
+
 	useEffect(() => {
 		getPlayList();
 	}, []);
@@ -56,6 +60,9 @@ export function Home() {
 					{playlist.map((e, i) => {
 						return (
 							<li
+								onClick={() => {
+									seleccionar(i);
+								}}
 								key={i}
 								className={
 									cancionActual === i ? "reproduciendo" : ""
